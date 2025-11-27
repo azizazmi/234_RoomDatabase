@@ -26,3 +26,11 @@ class EntryViewModel (private val repositoriSiswa: RepositoriSiswa): ViewModel()
             repositoriSiswa.insertSiswa(uiStateSiswa.detailSiswa.toSiswa())}
     }
 }
+
+data class DetailSiswa(
+    val id: Int = 0,
+    val nama: String = "",
+    val alamat: String = "",
+    val telpon: String = "",
+
+)
